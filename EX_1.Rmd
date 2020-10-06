@@ -1,0 +1,26 @@
+---
+title: "Ex_1B"
+author: "Lukas Nägeli"
+date: "25 9 2020"
+output: html_document
+---
+
+sampling 100 points from a log normal distribution
+```{r}
+mu<-1
+sigma<-.25
+x<-rlnorm(100,meanlog=mu, sdlog= sigma)
+```
+
+Histogramm of my sample
+```{r}
+hist(x)
+```
+
+Reporting mean and variance
+```{r}
+mean(x)
+var(x)
+```
+
+
